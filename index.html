@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57f27d3c4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="logoo.png" type="image/png">
+    <title>Twinkle Sharma</title>
+    <style>
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+        .down-to-top{
+            animation: down_to_top 2s ease forwards;
+            opacity: 0;
+        }
+        @keyframes down_to_top {
+            0%{
+            transform: translateX(-250px);
+            opacity: 0;
+    }
+        100%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        }
+        .left-to-right{
+            animation: left_to_right 3s ease forwards;
+            opacity: 0;
+        }
+        @keyframes left_to_right {
+            0%{
+                opacity:0;
+                transform: translateX(-200px);
+            }
+            100%{
+                opacity:1;
+                transform: translateX(0px);
+            }
+        }
+        .float1{
+            animation: float 7s infinite ease forwards;
+        }
+        @keyframes float {
+            0%{
+                transform: translateY(0px);
+            }
+            25%{
+                transform: translateY(15px);
+            }
+            50%{
+                transform: translateY(0px);
+            }
+            75%{
+                transform: translateY(15px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        .custom-height{
+            height:calc(100vh - 80px);
+        }
+        .delay1{
+            animation-delay: .4s;
+        }
+        .delay2{
+            animation-delay: .8s;
+        }
+        .delay3{
+            animation-delay: 1.2s;
+        }
+        .shadow1:hover{
+            box-shadow: 0px 5px 15px #899eff;
+        }
+        .bar-anime-python{
+            animation: barr1 2s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .bar-anime-C{
+            animation: barr2 2s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .bar-anime-html{
+            animation: barr3 2s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .bar-anime-flutter{
+            animation: barr4 2s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .bar-anime-php{
+            animation: barr5 2s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .bar-anime-mysql{
+            animation: barr6 2s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .animate-line{
+            animation: line-down 3s ease forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 60%;
+        }
+        .edu-boxx-anime{
+            animation: eduu-box-animate 2s ease-in forwards;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .swipe-right-animation{
+            animation: swipe-right 2s ease forwards;
+            opacity:0;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        .swipe-left-animation{
+            animation: swipe-left 2s ease forwards;
+            opacity:0;
+            animation-timeline: view();
+            animation-range: entry 0% cover 20%;
+        }
+        @keyframes swipe-right {
+            0%{
+                opacity:0;
+                left:0px;
+            }
+            100%{
+                opacity:1;
+                left:100px;
+            }
+        }
+        @keyframes swipe-left {
+            0%{
+                opacity:0;
+                right:0;
+            }
+            100%{
+                opacity:1;
+                right:100px;
+            }
+        }
+        @keyframes eduu-box-animate {
+            0%{
+                scale: 0;
+                opacity: 0;
+                transform: translateX(-200px);
+                transform: translateY(-200px);
+            }
+            100%{
+                scale:100%;
+                opacity:1;
+                transform: translateX(0);
+                transform: translateY(0);
+            }
+        }
+        @keyframes line-down {
+            0%{
+                height:0px;
+            }
+            100%{
+                height:180px;
+            }
+        }
+        @keyframes barr1 {
+            0%{
+                width:0;
+            }
+            100%{
+                width:80%;
+            }
+        }
+        @keyframes barr2 {
+            0%{
+                width:0;
+            }
+            100%{
+                width:60%;
+            }
+        }
+
+        @keyframes barr3 {
+            0%{
+                width:0;
+            }
+            100%{
+                width:70%;
+            }
+        }
+        @keyframes barr4 {
+            0%{
+                width:0;
+            }
+            100%{
+                width:45%;
+            }
+        }
+        @keyframes barr5 {
+            0%{
+                width:0;
+            }
+            100%{
+                width:50%;
+            }
+        }
+        @keyframes barr6 {
+            0%{
+                width:0;
+            }
+            100%{
+                width:40%;
+            }
+            
+        }
+        .shadow-right {
+      box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3); /* 4px right-side shadow */
+    }
+    </style>
+</head>
+<body class="bg-[#f9f9ff] w-screen m-0 p-0 absolute overflow-x-hidden font-[poppins-medium]">
+    <header class="h-[80px] border-b-2 border-[#2b4078] bg-[#f9f9ff] w-[100%] fixed flex z-10">
+        <div id="side-button" class=" h-[100%] w-[10%] sm:hidden flex justify-center items-center">
+                <button id="slide-button1" class="h-[60%] w-[95%]" onclick="onclick1()"> <i class="fa-solid fa-bars fa-xl" style="color: #2b4078;"></i></button>
+        </div>
+        <div id="left-header" class="w-[90%] sm:w-[40%] h-full flex items-center justify-center sm:justify-start">
+            <img src="./images/logo.png" alt="logo" class="h-[90%] ml-2 sm:ml-10  md:ml-10">
+        </div>
+        <div id="right-header" class="hidden sm:block sm:w-[60%] sm:h-full ">
+            <ul class="h-[100%] flex items-center justify-evenly text-[#2b4078] text-[18px]">
+                <li>
+                    <a href="#home" class="hover:text-[#2b4078] hover:text-[20px] hover:underline  down-to-top" style = "animation-delay: 0s;">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="hover:text-[#2b4078] hover:text-[20px] hover:underline  down-to-top" style = "animation-delay: 0.3s;">About</a>
+                </li>
+                <li>
+                    <a href="#education" class="hover:text-[#2b4078] hover:text-[20px] hover:underline  down-to-top" style = "animation-delay: 0.6s;">Education</a>
+                 </li>
+                <li>
+                   <a href="#experience" class="hover:text-[#2b4078] hover:text-[20px] hover:underline  down-to-top" style = "animation-delay: 0.9s;">Experience</a>
+                </li>
+                <li>
+                    <a href="#Events" class="hover:text-[#2b4078] hover:text-[20px] hover:underline  down-to-top" style = "animation-delay: 1.5s;">Events</a>
+                 </li>
+                 <li>
+                    <a href="#Books" class="hover:text-[#2b4078] hover:text-[20px]  hover:underline down-to-top" style = "animation-delay: 1.2s;">Books</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:text-[#2b4078] hover:text-[20px] hover:underline  down-to-top" style = "animation-delay: 1.5s;">Contact Me</a>
+                 </li>
+                 
+            </ul>
+        </div>
+    </header>
+    <main class="h-auto w-[100%] relative top-[80px] z-0">
+        <div id="sidebarr" class="hidden custom-height w-[90%] shadow-right bg-gray-100 fixed z-1 flex flex-col">
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#home" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        Home
+                    </a>
+                </div>
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#about" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        About Me
+                    </a>
+                </div>
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#education" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        Education
+                    </a>
+                </div>
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#experience" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        Experience
+                    </a>
+                </div>
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#Events" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        Events
+                    </a>
+                </div>
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#Books" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        Books
+                    </a>
+                </div>
+                <div id="side-bar-row" class="h-[10%] w-[100%]">
+                    <a href="#contact" class="h-[100%] w-[100%] flex justify-center items-center text-[26px] text-[#7f79ff]">
+                        Contact Us
+                    </a>
+                </div>
+        </div>
+        <div id="content-box" class="h-auto w-[100%] bg-#ff9248 z-0">
+            <div id="home" class="sm:h-[600px] h-[900px] w-[100%] sm:flex">
+                <div id="right-home" class="h-[55%] sm:h-[100%] w-[100%] sm:w-[40%] flex items-center justify-center sm:justify-end ">
+                    <img src="./images/profile.png" alt="Profile Photo" class="h-[80%] float1">
+                </div>
+                <div id="left-home" class="h-[40%] sm:h-[100%] w-[100%] sm:w-[60%] flex flex-col items-center justify-center">
+                    <p class="text-[34px] sm:text-[42px]">Hii, My name is <br><b class="text-[#2b4078]">Twinkle Sharma</b><br>and I am a passionate<br><span class="text-[#2b4078]" id="element"></span></p>
+                    <br>
+                    <div id="social-media" class="h-[75px] w-[350px]  flex items-center justify-evenly">
+                        <div class="cir h-[50px] w-[50px] rounded-[50%] bg-[#2b4078] float1 flex justify-center items-center shadow1 hover:bg-[#899eff]">
+                            <a href="https://www.facebook.com/share/1DuJ7Pt27L/" class="h-[100%] w-[100%] rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-facebook fa-2xl" style="color: #f9f9ff;"></i></a>
+                        </div>
+                        <div class="cir h-[50px] w-[50px] rounded-[50%] bg-[#2b4078] delay1 float1 flex justify-center items-center shadow1 hover:bg-[#899eff]">
+                            <a href="https://www.linkedin.com/in/twinkle-sharma-a228291aa" class="h-[100%] w-[100%] rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-linkedin-in fa-2xl" style="color: #f9f9ff;"></i></a>
+                        </div>
+                        <div class="cir h-[50px] w-[50px] rounded-[50%] bg-[#2b4078] delay2 float1 flex justify-center items-center shadow1 hover:bg-[#899eff]">
+                            <a href="https://www.instagram.com/.twinklesharma.?igsh=OGQ0aWc1MjdwOWpj" class="h-[100%] w-[100%] rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-instagram fa-2xl" style="color: #f9f9ff;"></i></a>
+                        </div>
+                        <div class="cir h-[50px] w-[50px] rounded-[50%] bg-[#2b4078] delay3 float1 flex justify-center items-center shadow1 hover:bg-[#899eff]">
+                            <a href="https://x.com/AdvTwinkle_?t=YGj992We6GM2gmdrWtiHJA&s=09" class="h-[100%] w-[100%] rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #f9f9ff;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+        <div id="about" class="min-h-[800px] sm:min-h-[500px] w-full flex flex-col sm:flex-row items-center">
+    <div id="left-about" class="hidden h-[100%] sm:flex w-full sm:w-[40%] justify-center items-center">
+        <img src="./images/about.png" alt="about" class="h-[500px] object-contain">
+    </div>
+    <div id="right-about" class="w-full h-[100%] sm:w-[60%] flex flex-col justify-center items-center px-4 py-4">
+        <p class="w-full sm:w-[80%] text-[20px] leading-relaxed text-justify tracking-wide">
+            <b><u class="text-[28px] sm:text-[36px] text-[#2b4078]">About</u></b><br><br>
+            I’m Twinkle Sharma, an advocate, author, and constitutional law enthusiast. I am currently pursuing my LL.M. in Constitutional and Administrative Law and have graduated from Rajasthan University Five Year Law College. I serve as the Co-Convener of Rajasthan Thinkers Forum. My book, Indian Constitutional Law, is published by Allahabad Law Agency and features a foreword by the Hon’ble Minister of Law and Justice, Shri Arjun Ram Meghwal Ji, written in recognition of my deep interest in constitutional studies. I have been Jaipur City Secretary in ABVP for the last two years, actively engaging in student and legal awareness initiatives. With courtroom experience alongside leading Supreme Court and High  Court advocates, I strive to link legal intellect with meaningful public discourse and social impact.
+        </p>
+        <div id="self-table" class="w-full sm:w-[80%] flex flex-col sm:flex-row gap-4 mt-6">
+            <table border="1" class="text-[18px] sm:text-[20px] text-black whitespace-pre-wrap break-words">
+                <tr>
+                    <td><b>Name :</b></td>
+                    <td>   Twinkle Sharma</td>
+                </tr>
+                <tr>
+                    <td><b>Email :</b></td>
+                    <td>   adv.twinklesharma30@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><b>Location :</b></td>
+                    <td>   Jaipur, Rajasthan, India</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+        </div>
+        <hr>
+        <div id="education" class="w-full sm:flex flex-col sm:flex-row px-4 py-8">
+    <!-- Left Section -->
+    <div id="left-education" class="w-full sm:w-[60%] flex flex-col">
+        <b class="text-[28px] sm:text-[36px] text-[#2b4078] mb-6"><u>Education</u></b>
+        <div class="flex w-full">
+            <!-- Points Timeline -->
+            <div id="points" class="flex flex-col items-center w-[10%] relative">
+                <div class="h-full flex flex-col items-center gap-[40px] justify-center">
+                    <div class="h-[25px] w-[25px] bg-[#2b4078] rounded-full"></div>
+                    <div class="h-[100px] w-[1px] bg-[#2b4078]"></div>
+                    <div class="h-[25px] w-[25px] bg-[#2b4078] rounded-full"></div>
+                    <div class="h-[100px] w-[1px] bg-[#2b4078]"></div>
+                    <div class="h-[25px] w-[25px] bg-[#2b4078] rounded-full"></div>
+                </div>
+            </div>
+
+            <!-- Education Boxes -->
+            <div id="box-des" class="flex flex-col w-[90%] gap-[40px]">
+                <div class="rounded-[15px] p-4 w-[95%] sm:w-[80%] bg-white shadow-md">
+                    <p><b class="text-[20px] sm:text-[24px]">LL.M ( Constitutional & Administrative Law)</b></p>
+                    <p class="text-[18px]">2024-Present</p>
+                    <p class="text-[16px] sm:text-[22px] text-gray-600">Vivekananda Global University, Jaipur</p>
+                </div>
+                <div class="rounded-[15px] p-4 w-[95%] sm:w-[80%] bg-white shadow-md">
+                    <p><b class="text-[20px] sm:text-[24px]">B.A. LL.B</b></p>
+                    <p class="text-[18px]">2019-2024</p>
+                    <p class="text-[16px] sm:text-[22px] text-gray-600">University Five Year Law College, University of Rajasthan</p>
+                </div>
+                <div class="rounded-[15px] p-4 w-[95%] sm:w-[80%] bg-white shadow-md">
+                    <p><b class="text-[20px] sm:text-[24px]">Senior Secondary (CBSE)</b></p>
+                    <p class="text-[18px]">2017-2018</p>
+                    <p class="text-[16px] sm:text-[22px] text-gray-600">Kendriya Vidyalaya No. 4, Jaipur</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Section -->
+    <div id="right-education" class="hidden sm:flex w-[40%] relative justify-center items-center">
+        <img src="./images/book1.png" alt="book" class="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 z-10">
+        <img src="./images/globe.png" alt="globe" class="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 z-20 swipe-right-animation">
+        <img src="./images/stairs.png" alt="stairs" class="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 z-20 swipe-left-animation">
+    </div>
+        </div>
+        <br>
+        <hr>
+        <div id="experience" class="h-auto w-[100%] flex justify-center items-center">
+            <div id="right-skills" class="h-auto w-[95%] sm:w-[80%]">
+                <br>
+                <p class="text-[36px] text-[#2b4078] text-center"><b><u>Experience</u></b></p>
+                <br>
+                <div id="skill-box" class="h-auto mb-[60px] w-[100%] bg-[#ffffff] rounded-[25px] shadow-2xl">
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px]">
+                            <img src="./images/rhc.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Advocate</b>
+                                <p class="text-[16px]">Rajasthan High Court • Full-time</p>
+                                <p class="text-[14px]">Nov 2024 - Present</p>
+                                <p class="text-[14px]">Jaipur, Rajasthan, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px]">
+                            <img src="./images/ila.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Associate Member</b>
+                                <p class="text-[16px]">Indian Lawyers Association</p>
+                                <p class="text-[14px]">Nov 2024 - Present</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/sc.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Supreme Court of India</b>
+                                <p class="text-[16px]">Internship</p>
+                                <p class="text-[14px]">Delhi, India • On-site</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <b class="text-[16px]">Legal Intern</b>
+                                <p class="text-[14px]">Mar 2023 - Mar 2023 • 1 mo</p>
+                                <p class="text-[14px] pb-[5px] text-justify">During my internship at the Supreme Court of India, under Adv. D. Bharat Kumar, I had the opportunity to work closely with renowned legal professionals and learned extensively about the practice and procedures of the Supreme Court.
+<br>
+One of the highlights of my internship was working at the National Consumer Dispute Redressal Commission, where I was involved in various aspects of consumer protection law. I assisted in drafting Special Leave Petitions (SLPs), Transfer Leave Petitions, and rejoinders, which provided me with a hands-on experience in the appellate process in the Supreme Court. 
+<br>
+In addition, I conducted thorough research on the Consumer Protection Act, 2019, and analysed numerous case laws about the same. This allowed me to gain a comprehensive understanding of the legal framework surrounding consumer rights and the remedies available to aggrieved consumers.
+<br>
+Furthermore, I had the opportunity to work on a high-profile property dispute case, which enabled me to delve into various areas of law. I worked on cases involving aspects of constitutional law, criminal law, as well as the Arbitration and Conciliation Act. By working on this complex case, I developed the ability to analyse legal issues from different perspectives and to provide well-rounded legal arguments.</p>
+                                <hr>
+                                <a id="certificate" href="./images/cer1.jpeg" target="_blank" class="h-[80px] pt-[5px] w-full flex">
+                                    <div id="left-img-cer" class="h-full w-[130px] flex justify-end items-center">
+                                        <img src="./images/cer1.jpeg" alt="certificate" class="h-[70px] w-[120px] object-fit border-[1px] rounded-[10px]">
+                                    </div>
+                                    <div id="right-text-cer" class="h-full w-[80%] flex justify-start items-center p-[20px]">
+                                        <p class="text-[16px]">Certificate of Internship</p>
+                                    </div>
+                                </a>
+<br><br>
+
+                                <b class="text-[16px]">Legal Intern</b>
+                                <p class="text-[14px]">Jan 2023 - Feb 2023 • 2 mo</p>
+                                <p class="text-[14px] pb-[5px] text-justify">I am thrilled to have had the opportunity to intern under the esteemed guidance of MLC Naraparaju Ramchander Rao, an accomplished legal professional, both in the Supreme Court and the Telangana High Court. During my time under his mentorship, I delved into the intricacies of constitutional matters, honing my skills and expanding my understanding of this vital area of law.
+<br>
+As an intern, I actively participated in drafting rejoinders and conducting extensive research on topics related to property disputes and family matters. This involved analysing case precedents, statutes, and legal doctrines to provide comprehensive and insightful solutions to complex legal issues. Through my research, I gained valuable insights into the intricacies of these areas and developed a critical eye for detail.
+<br>
+Additionally, I had the privilege of working on writing Special Leave Petitions (SLPs), a valuable experience that allowed me to enhance my legal writing skills and understand the intricacies of crafting persuasive arguments. Moreover, I was entrusted with the responsibility of researching and drafting legal opinions, contributing to the preparation of well-founded legal strategies.</p>
+                                <hr>
+                                <a id="certificate" href="./images/cer2.jpeg" target="_blank" class="h-[80px] pt-[5px] w-full flex">
+                                    <div id="left-img-cer" class="h-full w-[130px] flex justify-end items-center">
+                                        <img src="./images/cer2.jpeg" alt="certificate" class="h-[70px] w-[120px] object-fit border-[1px] rounded-[10px]">
+                                    </div>
+                                    <div id="right-text-cer" class="h-full w-[80%] flex justify-start items-center p-[20px]">
+                                        <p class="text-[16px]">Certificate of Internship</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/cat.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Winter Legal Intern</b>
+                                <p class="text-[16px]">Central Administrative Tribunal (CAT) • Internship</p>
+                                <p class="text-[14px]">Oct 2022 - Dec 2022 • 1 mos</p>
+                                <p class="text-[14px]">Jaipur, Rajasthan, India • On-site</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <p class="text-[14px] pb-[5px] text-justify">During my internship at the Central Administrative Tribunal (CAT) in Jaipur, I had the privilege of engaging in diverse tasks that significantly contributed to my growth as a legal professional. As an intern at CAT, I was entrusted with the responsibility of reviewing petitions. I meticulously read and analysed each petition, thoroughly examining the facts, legal arguments, and relevant statutes. Subsequently, I prepared comprehensive reports that provided a concise summary of the petitions, highlighting the key issues and legal considerations involved. Throughout my internship, I actively participated in court proceedings focusing on matters related to public service or public servants. This invaluable opportunity allowed me to witness the application of legal principles in real-time and gain insights into the nuances of the judicial process. By regularly attending these proceedings, I developed a deeper understanding of the legal intricacies surrounding public service and public servant cases.
+<br>
+Within the realm of major governmental services, particularly Railway services, I specialized in handling transfer-related and pension cases. These cases involved complex legal issues and required in-depth research and analysis. I worked diligently to examine transfer requests, pension claims, and related disputes. Additionally, I prepared drafts, notices, and rejoinders to effectively present our clients' arguments before the tribunal.
+<br>
+During my internship, I had the opportunity to work on a variety of cases, including those related to compensation, compassionate employment, and Employers Provident Fund (EPF). I delved into the intricacies of these matters, conducting extensive research and analysis to develop well-founded legal arguments. Furthermore, I actively contributed to the preparation of drafts, notices, and rejoinders, ensuring that our clients' interests were effectively represented.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/calstar.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Legal Research Intern</b>
+                                <p class="text-[16px]">Center for Advanced Legal Research and Trainin (CALSTAR) Internship</p>
+                                <p class="text-[14px]">Jul 2022 - Aug 2022 • 2 mos</p>
+                                <p class="text-[14px]">Mumbai, Maharashtra, India</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <p class="text-[14px] pb-[5px] text-justify">In the very beginning, I was provided with guidance on various research methods. One of the significant projects I worked on was a research study focused on assessing the "Efficiency of women police officers in Mumbai". I was involved in the entire research process, formulating a research question and drafting a hypothesis. I played a pivotal role in creating a comprehensive questionnaire and conducting a thorough literature review. My assigned area of focus was the Vasai-Virar region in Mumbai, where I delved into the plans implemented by the Maharashtra legislation. Throughout this project, I had to work closely with the senior researchers and gain hands-on experience in data collection. I actively participated in designing and implementing a survey to gather relevant data. At the culmination of this research project, I was responsible for compiling the collected data. I prepared a detailed research report, which highlighted the findings, conclusions, and recommendations regarding the efficiency of women police officers in the Vasai-Virar area. In the subsequent month, I had work on a different research project focused on Rehabilitation and Resettlement concerns related to acquisitions at the state level. Here, my main task was to conduct research on project-induced displacement and displacement caused by disasters. I identified gaps and shortcomings in previous researches and delved into the root causes behind the implementation challenges. I conducted research in Akkrapatti Village. I collected data on various aspects such as occupation, compensation, housing facilities, and civic amenities provided to individuals affected by acquisitions and displacements. Through this experience, I gained a deeper understanding of the practical implications of legal research and the importance of addressing the concerns of affected populations.</p>
+                                <hr>
+                                <a id="certificate" href="./images/cer3.jpeg" target="_blank" class="h-[80px] pt-[5px] w-full flex">
+                                    <div id="left-img-cer" class="h-full w-[130px] flex justify-end items-center">
+                                        <img src="./images/cer3.jpeg" alt="certificate" class="h-[70px] w-[120px] object-fit border-[1px] rounded-[10px]">
+                                    </div>
+                                    <div id="right-text-cer" class="h-full w-[80%] flex justify-start items-center p-[20px]">
+                                        <p class="text-[16px]">Certificate of Internship</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/bklegal.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Law Intern</b>
+                                <p class="text-[16px]">BSK Legal- Solicitors & Advocates • Internship</p>
+                                <p class="text-[14px]">Oct 2021 - Oct 2021 • 1 mos</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <p class="text-[14px] pb-[5px] text-justify">I had the incredible opportunity to intern at the BSK Legal – Solicitors and advocates under Supreme Court advocate Sanjay K. Chadha. This internship, although conducted virtually, provided me with invaluable insights into the art of advocacy and the presentation of arguments.
+<br>As part of my daily routine, I attended virtual Supreme Court proceedings, immersing myself in the live cases and observing the arguments presented. In the evenings, I diligently delved into the legal domain of the morning's case laws, thoroughly reading and analyzing them. Additionally, regular group sessions were organised where we discussed specific fields of law, enabling us to gain a comprehensive understanding of various legal areas.
+<br>I was entrusted with the responsibility of conducting research for ongoing cases. I was assigned to work on cases spanning trial courts, consumer courts, company courts, the Competition Commission, Competition Appellate Tribunal, Customs, Excise and Gold (Control) Appellate Tribunal, all High Courts, and the Supreme Court of India. This diverse exposure allowed me to gain practical experience in areas such as criminal law, consumer law, writ petitions, commercial disputes, civil matters, and arbitration proceedings.
+<br>During the internship, the lectures covered a wide range of topics, including Insurance Law, Labour Law, Constitutional Law, Criminal Law, Environmental Law, RTI Law, Law relating to Women, Alternative Dispute Resolution, Arbitration, Personal Laws, and practical aspects of litigation. Active participation and attentive listening were encouraged, and we were expected to take detailed notes, which often included Sir's personal anecdotes related to law, advocacy, and litigation.</p>
+                                <hr>
+                                <a id="certificate" href="./images/cer4.jpeg" target="_blank" class="h-[80px] pt-[5px] w-full flex">
+                                    <div id="left-img-cer" class="h-full w-[130px] flex justify-end items-center">
+                                        <img src="./images/cer4.jpeg" alt="certificate" class="h-[70px] w-[120px] object-fit border-[1px] rounded-[10px]">
+                                    </div>
+                                    <div id="right-text-cer" class="h-full w-[80%] flex justify-start items-center p-[20px]">
+                                        <p class="text-[16px]">Certificate of Internship</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/tld.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Legal Intern</b>
+                                <p class="text-[16px]">The Law Desk • Internship</p>
+                                <p class="text-[14px]">Apr 2021 - Apr 2021 • 1 mos</p>
+                                <p class="text-[14px]">Jaipur, Rajasthan, India • On-site</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <p class="text-[14px] pb-[5px] text-justify">During my internship at The LawDesk in Jaipur, I had the incredible opportunity to work on a wide range of legal matters and gain exposure to various issues within the field. Throughout my time at the firm, I actively engaged with diverse fields and delved into the complexities of several important acts, including The Arbitration and Conciliation Act, The SARFAESI Act, The Trademark Act, The Consumer Protection Act, The Central Goods and Service Act, Intellectual Property Rights, The Indian Trust Act, and The Companies Act.
+<br>
+One of my key responsibilities during the internship was assisting in the drafting of legal opinions, review petitions, and various case briefs. This involved conducting thorough research, analyzing relevant legal precedents, and presenting concise and well-structured summaries. Additionally, I was entrusted with the task of creating briefs and summaries specifically related to consumer matters, enabling me to develop a comprehensive understanding of consumer protection laws and their practical applications.
+<br>
+Moreover, I was given the opportunity to engage in drafting work, including Public Interest Litigation (PIL) documents, replies, rejoinders, written arguments, and first appeals. These tasks honed my legal drafting skills and required meticulous attention to detail and strong analytical thinking. I was able to contribute to the firm's legal strategies and gain a deeper understanding of the nuances of legal proceedings.
+<br>
+Furthermore, I had the responsibility of handling notices and drafting appropriate responses to them. This involved careful examination of the legal issues at hand, crafting well-reasoned responses, and ensuring timely submission. Through this experience, I developed a practical understanding of the importance of effective communication and the significance of proper legal representation.</p>
+                                <hr>
+                                <a id="certificate" href="./images/cer5.jpeg" target="_blank" class="h-[80px] pt-[5px] w-full flex">
+                                    <div id="left-img-cer" class="h-full w-[130px] flex justify-end items-center">
+                                        <img src="./images/cer5.jpeg" alt="certificate" class="h-[70px] w-[120px] object-fit border-[1px] rounded-[10px]">
+                                    </div>
+                                    <div id="right-text-cer" class="h-full w-[80%] flex justify-start items-center p-[20px]">
+                                        <p class="text-[16px]">Certificate of Internship</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex border-b-[1px] text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/rhc.jpeg" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Legal Internship</b>
+                                <p class="text-[16px]">Rajasthan High Court Jaipur • Internship</p>
+                                <p class="text-[14px]">Feb 2021 - Feb 2021 • 1 mos</p>
+                                <p class="text-[14px]">Jaipur, Rajasthan, India • On-site</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <p class="text-[14px] pb-[5px] text-justify">During my internship in guidence of Vandana Sharma at the esteemed Rajasthan High Court, I had the opportunity to gain valuable insights and hands-on experience in the legal field. As a legal intern, my responsibilities primarily revolved around conducting thorough research and preparing briefs for specific cases assigned to me.
+<br>
+One of the key aspects of my internship was the extensive research work I undertook, which involved delving into various aspects related to Constitutional Law, Indian Contract Act 1872, Code of Civil Procedure 1908, Indian Penal Code 1860, and Service Law. This provided me with a comprehensive understanding of these crucial legal frameworks and their practical applications in the courtroom.
+In addition to conducting legal research, I actively participated in observing court proceedings. This involved closely monitoring item numbers and attentively observing the court proceedings, enabling me to gain practical exposure to the dynamics of a functioning courtroom. This experience significantly enhanced my understanding of legal proceedings and the intricacies of the judicial process.
+Throughout my internship, I was also entrusted with specific legal propositions on which I was required to conduct in-depth research. This responsibility further honed my research and analytical skills, as well as my ability to critically analyze complex legal issues and provide comprehensive solutions.
+Working at Rajasthan High Court not only exposed me to a wide range of legal matters but also allowed me to witness the practical application of legal principles in a professional setting. The experience helped me develop a deep appreciation for the intricacies of the legal system and the importance of meticulous research and preparation in the pursuit of justice.</p>
+                                <hr>
+                                <a id="certificate" href="./images/cer6.jpeg" target="_blank" class="h-[80px] pt-[5px] w-full flex">
+                                    <div id="left-img-cer" class="h-full w-[130px] flex justify-end items-center">
+                                        <img src="./images/cer6.jpeg" alt="certificate" class="h-[70px] w-[120px] object-fit border-[1px] rounded-[10px]">
+                                    </div>
+                                    <div id="right-text-cer" class="h-full w-[80%] flex justify-start items-center p-[20px]">
+                                        <p class="text-[16px]">Certificate of Internship</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience-card" class="p-[10px] h-auto w-full flex text-left">
+                        <div id="left" class="w-[80px] h-[300px]">
+                            <img src="./images/pucl.png" alt="logo" class="h-[70px] w-[70px] object-contain">
+                        </div>
+                        <div id="right" class="w-[calc(100%-80px)] h-auto pl-[5px] pr-[15px]">
+                            <div id="up" class="h-auto pb-[10px] w-[100%] ">
+                                <b class="text-[18px]">Winter Intern</b>
+                                <p class="text-[16px]">People's Union for Civil Liberty • Internship</p>
+                                <p class="text-[14px]">Jan 2020 - Jan 2020 • 1 mos</p>
+                            </div>
+                            <div id="down" class=" w-[100%]">
+                                <p class="text-[14px] pb-[5px] text-justify">One of the aspects of my internship was participating in sessions that focused on the rights of marginalized individuals, including women, children, LGBTQIA+ individuals, Dalits, minorities, workers, and the homeless, among others. These sessions explored topics such as gender as a social construct, manifestations of relationships, sexual harassment in the workplace, honor killings, the criminal justice system, the Juvenile Justice Act, journalism and democracy, the Indian education system, and the Draft of National Education Policy. I actively participated in the daily Street Medicine program for the homeless, where I visited recovery shelters. My responsibilities included conducting surveys to assess people's entitlements in various homeless settlements, working towards securing rations, pension entitlements, and other income support benefits for the underprivileged. This experience allowed me to witness the challenges faced by the homeless population firsthand and actively contribute to their well-being.
+As part of our collective efforts, we visited Madrasas for boys and girls and engaged with members of the Muslim community to address issues related to education, citizenship, and livelihood. We conducted sessions with students and community members, focusing on the Constitution and fundamental rights, promoting awareness and empowering individuals with legal knowledge.
+Throughout my internship, I had the opportunity to visit various courts in Jaipur, including the District and Sessions Court, Rajasthan High Court (Jaipur Bench), Family Court, District and State Legal Services Authority, Alternative Dispute Redressal Centre, and Consumer Courts. These visits provided valuable insights into the legal system and mechanisms for protecting women and children. I also engaged with stakeholders such as schools, colleges, media persons, administrative setups, NGOs, activists, and filmmakers, fostering collaborations and promoting collective action.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="Events" class="h-[3850px] lg:h-[1450px] w-[100%]">
+            <div id="up-event" class="h-[50px] w-[100%] flex flex-col justify-center items-center bg-[#f9f9ff]">
+                <p class="text-[36px] text-[#2b4078] text-center"><b><u>Events</u></b></p>
+            </div>
+            <div id="down-event" class="h-[3780px] lg:h-[1400px] w-[100%]">
+                <div id="roww1" class="h-[1260px] lg:h-[450px] w-[100%] flex flex-col lg:flex-row gap-[10px] justify-around lg:justify-center items-center">
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event1.jpeg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Discussion with N.P. Padhy Sir, Director of MNIT Jaipur</b>
+                                    <p class="text-[14px] w-[90%] text-justify">Had a wonderful session and insightful discussion with N.P. Padhy Sir, Director of MNIT Jaipur. Truly honored to attend the fabulous lecture by my mentor, Shri Ravi Ji on Rajasthan's remarkable contribution to the world -an inspiring and enriching experience.</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event4.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Speaker in a Panel discussion at RYTM 2024</b>
+                                    <p class="text-[14px] w-[90%] text-justify">With esteemed IRS officer Shri Kuldeep Vishnoi Ji and Chhavi Rajawat Ji on the topic "Empowering the leaders of tomorrow: Guiding youth towards a brighter future in nation building."</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event9.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Preview launch of Constitutional Law of India at the University of Rajasthan.</b>
+                                    <p class="text-[14px] w-[90%] text-justify">Hon'ble Mr. Justice Aravind Kumar (Judge, Supreme Court of India), Hon'ble Mr. Justice M.M. Srivastava (Chief Justice, Rajasthan High Court), Hon'ble Mr. Justice N.K. Jain (Former Chief Justice, Sikkim High Court), and Justice J.K. Ranka (Vice Chairman, Ranka Public Charitable Trust).</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event7.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">13th Young Thinkers Meet organised by the India Foundation at Chitrakote, Chhattisgarh.</b>
+                                    <p class="text-[14px] w-[90%] text-justify">The aims and objectives of the conference were to discuss policy change and ideology shifts in order to build a Viksit Bharat by 2047.</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                </div>
+                <div id="roww2" class="h-[1260px] lg:h-[450px] w-[100%] flex flex-col lg:flex-row gap-[10px] justify-around lg:justify-center items-center">
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event3.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Guest Speaker at Rajasthan University on Death Anniversary of Dr. Rajendra Prasad</b>
+                                    <p class="text-[14px] w-[90%] text-justify">On the death anniversary of India’s first President and Bharat Ratna, Dr. Rajendra Prasad, I had the honour of being a guest speaker in a special session titled “Legacy of Leadership: Remembering Dr. Rajendra Prasad” at the Girls’ Hostel, University of Rajasthan.</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event6.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Met Padma Shri awardee T.V. Mohandas Pai alongside Shri Ravi Kumar Ji </b>
+                                    <p class="text-[14px] w-[90%] text-justify">Exchanged insightful discussions and wisdom</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event8.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">8th International Dharma-Dhamma Conference 2024</b>
+                                    <p class="text-[14px] w-[90%] text-justify">Represented India and presented a paper on "Concepts of Super Consciousness from the Trika-Shaiva-Shakta Continuum, Shadamnaya to Shanmatass and Boudh Darshanas: Siddhanta and Dharanas towards an Experiential Cosmology for the Balanced Individual"</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event5.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Meeting with Hon’ble Governor of Rajasthan, Shri Kalraj Mishra Ji</b>
+                                    <p class="text-[14px] w-[90%] text-justify">Engaged in a meaningful discussion on Bharat’s invaluable contributions to the world across history and civilization.</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                </div>
+                <div id="roww3" class="h-[1260px] lg:h-[450px] w-[100%] flex flex-col lg:flex-row gap-[10px] justify-around lg:justify-center items-center">
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event10.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">At the Akhil Bhartiya Jyestha Adhivakta Sangam pranyas event</b>
+                                    <p class="text-[14px] w-[90%] text-justify"> I had the privilege of meeting Shri Arjun Ram Ji Meghwal and Shri Jogaram Ji Patel. Their insightful thoughts on contemporary legal challenges and the evolving role of law in society left a lasting impression, further inspiring my dedication to constitutional and human rights.</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event11.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Organised Chhatra Shakti Sammelan in Jaipur to Raise Student Voices</b>
+                                    <p class="text-[14px] w-[90%] text-justify">Organised the Chhatra Shakti Sammelan in Jaipur, uniting 2,813 students from across the city in a powerful show of solidarity. The gathering served as a platform to protest against rising incidents of paper leaks, unjustified fee hikes, and growing atrocities on students.</p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event12.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">Organised Civic Reception for SEIL Tour 2023 Delegates in Jaipur</b>
+                                    <p class="text-[14px] w-[90%] text-justify">Organised a civic reception and cultural program in Jaipur for the Kanaklata Barua group of SEIL Tour 2023. The delegates met Hon’ble Governor Shri Kalraj Mishra and shared their enriching experiences of the national integration tour. </p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                    <div class="ph1 h-[24%] lg:h-[95%] w-[90%] lg:w-[22%] bg-[#f5f5f5] shadow-amber-50">
+                            <div class="up-ph1 h-[45%] w-[100%] flex justify-center items-center">
+                                <img src="./images/event13.jpg" alt="event" class="h-[90%] w-[90%] hover:h-[93%] object-contain">
+                            </div>
+                            <div class="down-ph1 h-[55%] w-[100%] flex flex-col items-center relative">
+                                <div class="bb h-[100%] w-[100%]">
+                                    <b class="text-[16px] w-[90%] text-justify">At JECRC Cultural Fest with Singer Komal Amrawat and Producer Kapil Mishra</b>
+                                    <p class="text-[14px] w-[90%] text-justify"></p>
+                                </div>
+                                <img src="./images/tb.png" alt=".." class="hidden h-[100%] w-[100%] lg:absolute z-0">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="Books" class="h-[650px] md:h-[600px] w-[100%]">
+            <div id="up-book" class="h-[50px] w-[100%] flex flex-col justify-center items-center">
+                <p class="text-[36px] text-[#2b4078] text-center"><b><u>Books</u></b></p>
+            </div>
+            <div id="down-book" class="h-[600px] md:h-[550px] w-[100%] flex justify-center">
+                <div id="book-box" class="h-[100%] w-[90%] flex">
+                    <div id="left-book-box" class="h-[100%] w-[100%] flex flex-col items-center md:w-[50%] md:items-end">
+                        <div id="outer" class="h-[60%] w-[90%] md:h-[100%] flex justify-center items-center">
+                            <div id="book-img-box" class="h-[90%] w-[100%] md:w-[85%] lg:w-[65%] bg-white flex justify-center items-center shadow-xl">
+                                <img src="./images/book.jpg" alt="Book 1" class="h-[90%] w-[90%] object-contain">
+                            </div>
+                        </div>
+                        <div id="book-details-box" class="h-[40%] w-[90%] flex flex-col items-center md:hidden"><br>
+                            <p class="text-[18px] text-[#2b4078]"><b>Twinkle Sharma</b></p>
+                            <p class="text-[24px] text-gray-700">Constitutional Law of India</p>
+                            <div id="star-box" class="h-[30px] w-[100%] flex justify-center items-center gap-[5px]">
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div><br>
+                            <a href="https://amzn.in/d/gHR5Pet" class="h-[50px] w-[280px] rounded-[15px] text-[24px] text-blue-400 bg-yellow-300 flex justify-center items-center"> <pre><i class="fa-solid fa-cart-shopping" style="color: #2563eb;"></i> BUY FROM AMAZON</pre></a>
+                        </div>
+                    </div>
+                    <div id="right-book-box" class="h-[100%] w-[50%] hidden md:block">
+                        <div id="star-box" class="h-[30px] w-[100%] flex justify-end items-center gap-[5px]">
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                            </div><br>
+                        <p class="text-[18px]">Constitutional Laws of India
+                        <br><br>
+                        Twinkle Sharma
+
+                        <br><br>
+                        <a href="mailto:adv.twinklesharma30@gmail.com">adv.twinklesharma30@gmail.com</a>
+                        <br><br>
+                        <b>Description:</b>
+                        <br>
+                        <p class="leading-relaxed text-justify tracking-wide">This book is a comprehensive guide to the Constitutional Law of India, covering various aspects such as fundamental rights, directive principles, and the structure of the Indian Constitution. It is designed for students, legal professionals, and anyone interested in understanding the constitutional framework of India.</p>
+                        <br>
+                        </p>
+                        <a href="https://amzn.in/d/gHR5Pet" class="h-[50px] w-[250px] rounded-[15px] text-[20px] text-blue-400 bg-yellow-300 flex justify-center items-center"> <pre><i class="fa-solid fa-cart-shopping" style="color: #2563eb;"></i> BUY FROM AMAZON</pre></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <hr>
+        <div id="contact" class="h-[550px] md:h-[500px] w-[100%] flex">
+            <div id="left-contact"  class="hidden md:flex h-[100%] w-[40%] justify-end items-center">
+                <img src="./images/contact.png" alt="Contact Image" class="h-[80%] w-[80%] object-cover">
+            </div>
+            <div id="right-contact" class="h-[100%] w-[100%] sm:w-[60%]">
+                <br>
+                <p class="text-[36px] text-[#2b4078] text-center"><b><u>Contact Me</u></b></p>
+                <br>
+                <form action="https://api.web3forms.com/submit" method="POST" class="h-[490px] w-[100%] flex flex-col items-center">
+                    <input type="hidden" name="access_key" value="87c2e48c-8983-4039-8bfd-88e09bda462d">
+                    <input type="text" name="Name"class="h-[45px] w-[60%] rounded-[15px] border-[2px] focus:border-[#2b4078] focus:outline-none p-[10px]" placeholder="Name" required><br>
+                    <input type="email" name="E-Mail" class="h-[45px] w-[60%] rounded-[15px] border-[2px] focus:border-[#2b4078] focus:outline-none p-[10px]" placeholder="Email Address" required><br>
+                    <input type="text" name="Mobile no." class="h-[45px] w-[60%] rounded-[15px] border-[2px] focus:border-[#2b4078] focus:outline-none p-[10px]" placeholder="Phone Number" required><br>
+                    <textarea name="message" id="message-box" class="h-[130px] sm:h-[95px] w-[60%] rounded-[15px] border-[2px] focus:border-[#2b4078] focus:outline-none p-[10px]" placeholder="Message"></textarea>
+                    <br><input type="submit" value="Send" class="h-[40px] w-[100px] bg-[#2b4078] rounded-[20px] float1">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <footer class="h-[50px] w-[100%] flex justify-center items-center">
+            <p class="text-[14px] text-[#2b4078]">&copy; Copyright Twinkle Sharma. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Advocate', 'Author', 'Content Writer'],
+      typeSpeed: 100,
+      backSpeed:100,
+      backdelay:1000,
+      loop: true
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    
+  </script>
+</body>
+</html>
